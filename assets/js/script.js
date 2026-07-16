@@ -48,3 +48,21 @@ window.addEventListener("load", () => {
 
 });// Contact Form Message
 
+// Service Search
+const search = document.getElementById("serviceSearch");
+
+if(search){
+search.addEventListener("keyup",function(){
+
+const value = this.value.toLowerCase();
+
+document.querySelectorAll(".service-card").forEach(card=>{
+
+card.style.display =
+card.innerText.toLowerCase().includes(value)
+? "block":"none";
+
+});
+
+});
+}
