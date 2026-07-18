@@ -93,13 +93,21 @@ body{
 
 .btn{
     display:inline-block;
-    padding:15px 35px;
+    padding:16px 35px;
     background:#ff9800;
     color:#fff;
     text-decoration:none;
-    border-radius:30px;
+    border-radius:50px;
     font-weight:600;
-    transition:.3s;
+    font-size:17px;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.btn:hover{
+    background:#e68900;
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
 }
 
 .btn:hover{
@@ -489,12 +497,16 @@ body{
     display:flex;
     justify-content:center;
     gap:20px;
-    margin-top:25px;
     flex-wrap:wrap;
+    margin-top:35px;
 }
 
 .btn2{
     background:#25D366;
+}
+
+.btn2:hover{
+    background:#1fa851;
 }
 
 .btn2:hover{
