@@ -720,4 +720,40 @@ transition:.3s;
 #topBtn:hover{
 background:#084298;
 transform:translateY(-5px);
+}.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+    margin-top:35px;
+}
+
+.hero-buttons .btn{
+    padding:15px 32px;
+    border-radius:50px;
+    font-size:16px;
+    font-weight:700;
+    text-decoration:none;
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.btn-primary{
+    background:#ff9800;
+    color:#fff;
+}
+
+.btn-call{
+    background:#0056d6;
+    color:#fff;
+}
+
+.btn-whatsapp{
+    background:#25D366;
+    color:#fff;
+}
+
+.hero-buttons .btn:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 35px rgba(0,0,0,.30);
 }
