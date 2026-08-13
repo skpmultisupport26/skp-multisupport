@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online PVC Card Order | SKP MULTISUPPORT</title>
+<meta name="description" content="Order custom PVC ID cards online from SKP MULTISUPPORT. Employee, Student, Membership, Business and Custom PVC Cards.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Poppins,sans-serif;background:#f5f7fb;color:#222}
+.top{background:#06489b;color:#fff;padding:18px 20px;display:flex;align-items:center;gap:12px}
+.top img{width:58px;height:58px;object-fit:contain;background:#fff;border-radius:4px}
+.top h1{font-size:22px;margin:0}
+.hero{background:linear-gradient(135deg,#06489b,#0b65c7);color:#fff;text-align:center;padding:45px 18px}
+.hero h2{font-size:30px;margin:0 0 10px}
+.hero p{max-width:750px;margin:auto;line-height:1.7}
+.container{max-width:1000px;margin:30px auto;padding:0 16px}
+.card{background:#fff;border-radius:16px;padding:24px;margin-bottom:22px;box-shadow:0 5px 22px rgba(0,0,0,.08)}
+h2{color:#06489b;margin-top:0}
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.type{border:2px solid #e5eaf2;border-radius:12px;padding:18px;text-align:center;cursor:pointer;transition:.2s}
+.type:hover,.type.active{border-color:#06489b;background:#eef5ff}
+.type i{font-size:28px;color:#06489b;margin-bottom:8px}
+.type strong{display:block}
+label{font-weight:600;font-size:14px;display:block;margin:14px 0 6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #ccd4df;border-radius:8px;font:inherit;background:#fff}
+input[type=file]{padding:9px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.full{grid-column:1/-1}
+.price{background:#fff7d6;border:1px solid #f0d56b;padding:15px;border-radius:10px;margin-top:18px;font-weight:600}
+.price span{color:#06489b;font-size:22px}
+.btn{display:inline-block;border:0;border-radius:9px;background:#ff9f00;color:#fff;padding:13px 22px;font-weight:700;cursor:pointer;font:inherit}
+.btn.green{background:#20c968}
+.note{font-size:12px;color:#666;line-height:1.6}
+.back{display:inline-block;color:#fff;text-decoration:none;margin-right:20px}
+footer{background:#073d80;color:#fff;text-align:center;padding:25px 15px;margin-top:35px}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.hero h2{font-size:24px}.top h1{font-size:18px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+<a class="back" href="index.html"><i class="fas fa-arrow-left"></i></a>
+<img src="assets/images/logo.png" alt="SKP MULTISUPPORT Logo">
+<h1>SKP MULTISUPPORT</h1>
+</header>
+
+<section class="hero">
+<h2>Online PVC Card Printing</h2>
+<p>Employee ID, Student ID, Membership, Business & Custom PVC Cards — order online and get doorstep delivery.</p>
+</section>
+
+<main class="container">
+
+<section class="card">
+<h2>1. Select Card Type</h2>
+<div class="types">
+<div class="type active" data-type="Employee ID Card"><i class="fas fa-id-card"></i><strong>Employee ID</strong><small>₹149 / card</small></div>
+<div class="type" data-type="Student ID Card"><i class="fas fa-graduation-cap"></i><strong>Student ID</strong><small>₹149 / card</small></div>
+<div class="type" data-type="Membership Card"><i class="fas fa-address-card"></i><strong>Membership</strong><small>₹149 / card</small></div>
+<div class="type" data-type="Business / Visiting Card"><i class="fas fa-briefcase"></i><strong>Business Card</strong><small>₹149 / card</small></div>
+<div class="type" data-type="Custom PVC Card"><i class="fas fa-credit-card"></i><strong>Custom PVC</strong><small>₹149 / card</small></div>
+</div>
+</section>
+
+<section class="card">
+<h2>2. Customer Details</h2>
+<form id="pvcForm" action="https://formsubmit.co/skpmultisupport26@gmail.com" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New PVC Card Order - SKP MULTISUPPORT">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://skpmultisupport.in/pvc-card.html?success=1">
+<input type="hidden" name="Card Type" id="cardType" value="Employee ID Card">
+<input type="hidden" name="Estimated Amount" id="amount" value="149">
+
+<div class="grid">
+<div>
+<label>Full Name *</label>
+<input type="text" name="Name" required placeholder="Enter full name">
+</div>
+<div>
+<label>Mobile Number *</label>
+<input type="tel" name="Mobile" required pattern="[0-9]{10}" placeholder="10 digit mobile number">
+</div>
+<div>
+<label>Email</label>
+<input type="email" name="Email" placeholder="your@email.com">
+</div>
+<div>
+<label>ID / Employee / Student No.</label>
+<input type="text" name="ID Number" placeholder="Optional">
+</div>
+<div>
+<label>Date of Birth</label>
+<input type="date" name="Date of Birth">
+</div>
+<div>
+<label>Quantity *</label>
+<input type="number" id="qty" name="Quantity" min="1" max="500" value="1" required>
+</div>
+<div class="full">
+<label>Address *</label>
+<textarea name="Address" rows="3" required placeholder="Complete delivery address"></textarea>
+</div>
+<div>
+<label>Photo *</label>
+<input type="file" name="Photo" accept="image/jpeg,image/png" required>
+</div>
+<div>
+<label>Signature / Logo</label>
+<input type="file" name="Signature or Logo" accept="image/jpeg,image/png">
+</div>
+<div class="full">
+<label>Special Instructions</label>
+<textarea name="Instructions" rows="3" placeholder="Front/back details, company name, blood group, etc."></textarea>
+</div>
+</div>
+
+<div class="price">Estimated total: <span id="total">₹149</span><br>
+<small>Final shipping/design charges, if applicable, will be confirmed before printing.</small></div>
+
+<p class="note"><strong>Important:</strong> Do not upload Aadhaar, PAN, bank details or other sensitive documents unless they are genuinely required for a specific service. This page is for custom PVC cards. It is not an official Aadhaar PVC-card ordering service.</p>
+
+<br>
+<button class="btn green" type="submit"><i class="fas fa-paper-plane"></i> Submit PVC Card Order</button>
+</form>
+</section>
+
+<section class="card">
+<h2>3. What happens after you order?</h2>
+<p>1️⃣ We receive your details and photo.</p>
+<p>2️⃣ We prepare the card design.</p>
+<p>3️⃣ We contact you on WhatsApp for confirmation/preview.</p>
+<p>4️⃣ After approval and payment confirmation, the card is printed and dispatched.</p>
+<p><strong>Need help?</strong> <a href="https://wa.me/918104879956?text=Hello%20SKP%20MULTISUPPORT%2C%20I%20want%20to%20order%20a%20PVC%20Card." target="_blank">Chat on WhatsApp</a></p>
+</section>
+
+</main>
+
+<footer>
+<strong>SKP MULTISUPPORT</strong><br>
+📞 +91 8104879956 &nbsp; | &nbsp; 📧 skpmultisupport26@gmail.com
+</footer>
+
+<script>
+const pricePerCard = 149;
+const types = document.querySelectorAll('.type');
+const cardType = document.getElementById('cardType');
+const qty = document.getElementById('qty');
+const total = document.getElementById('total');
+const amount = document.getElementById('amount');
+
+types.forEach(t => {
+  t.addEventListener('click', () => {
+    types.forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    cardType.value = t.dataset.type;
+  });
+});
+
+function updateTotal(){
+  const q = Math.max(1, Math.min(500, parseInt(qty.value || 1)));
+  qty.value = q;
+  const value = q * pricePerCard;
+  total.textContent = '₹' + value.toLocaleString('en-IN');
+  amount.value = value;
+}
+qty.addEventListener('input', updateTotal);
+updateTotal();
+</script>
+
+</body>
+</html>
